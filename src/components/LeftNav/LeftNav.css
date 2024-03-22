@@ -1,0 +1,95 @@
+#leftNav{
+    border-radius: 10px;
+}
+#img{
+   margin: -116px auto 21px;
+   border-radius: 10px;
+}
+#name{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 0px;
+}
+#uiux{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    background-color: #f3f6f6;
+    background: 0% 0%;
+    height: 36px;
+    width: 143.175px;
+    margin: 0 0 15px 0;
+    padding: 4px 20px 4px 20px;
+    display: inline-block;
+    transform: none;
+    transition: all 0s ease 0s;
+    box-sizing: border-box; 
+}
+#contact{
+    background-color: #f3f6f6;
+    height: 302.4px;
+    width: 280px;
+    margin: 0 0 30px 20px;
+    padding: 20px 30px 20px 30px;
+}
+#phone{
+    height: 65px;
+    width: 220px;
+    padding: 10px 0 10px 0;
+    color: #44566C;
+}
+#phnIcon{
+    width: 44px;
+    min-height: auto;
+    min-width: auto;
+    display: block;
+    height: 44px;
+    background-color: #f3f6f6;
+    text-align: center;
+}
+#phndetails{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+}
+#PhoneP{
+    font-size: 12px;
+    font-family: 'Poppins, sans-serif';
+    line-height: 18px;
+    text-decoration: none solid rgb(68, 86, 108);
+    text-align: left;
+    color: #44566C;
+}
+#num{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: black;
+}
+#logo{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none solid rgb(68, 86, 108);
+    height: 40px;
+    width: 230px;
+    margin: 0 25px 30px 13%;
+    padding: 0 8px 0 8px;
+    gap: 20px;
+}
+#fb{
+    background-color: #f3f6f6;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
