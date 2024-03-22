@@ -3,7 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 border-4 border-sky-500">
+    <div className="navbar bg-base-100 ">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl"><img src="../../../public/logo-preview.webp" width="153" height="32" alt="" /></a>
       </div>

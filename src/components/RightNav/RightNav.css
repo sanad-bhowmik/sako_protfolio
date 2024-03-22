@@ -1,0 +1,44 @@
+#rightNav{
+    font-size: 16px;
+    line-height: 28px;
+    background-color: #FFFFFF;
+    color: #44566c;
+    height: 536px;
+    width: 120px;
+    padding: 18px 18px 18px 18px;
+    top: -45px;
+    display: block;
+    border-radius: 10px;
+    position: sticky;
+    margin-left: 60%;
+}
+#about{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f3f6f6;
+    background-position: 0% 0%;
+    color: #44566c;
+    height: 84px;
+    width: 84px;
+    margin: 0 0 20px 0;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+#about:hover {
+    color: #f3f6f6;
+    background-color: #1b74e4;
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+#icon{
+    height: 37px;
+    margin-bottom: 6px;
+    margin-left: 22px;
+}
+#aboutSpan{
+    font-family: sans-serif;
+    font-weight: 700;
+}

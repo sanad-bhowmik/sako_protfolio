@@ -1,0 +1,22 @@
+#AboutDiv h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    height: 60px;
+    width: 114.668px;
+    margin: 0 0 15px 0;
+    line-height: 60px;
+    position: relative;
+    color: black;
+}
+#hr{
+    flex: 1; 
+    border: none;
+    border-top: 3px solid #1b74e4; 
+    margin-left: 10px; 
+    margin-top: 30px;
+    width: 200px;
+}
+#AboutDiv p{
+    text-align: start;
+}

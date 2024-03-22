@@ -93,3 +93,17 @@
     width: 40px;
     border-radius: 10px;
 }
+#cvBtn{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #1b74e4;
+    height: 56.6px;
+    width: 204.988px;
+    color: white;
+}
+#cvBtn:hover{
+    background-color: #f3f6f6;
+    color: black;
+    border: 1px solid #1b74e4;
+    font-weight: 100;
+}
