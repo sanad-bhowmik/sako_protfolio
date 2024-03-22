@@ -1,5 +1,7 @@
 #leftNav{
     border-radius: 10px;
+    height: 80%;
+    position: sticky;
 }
 #img{
    margin: -116px auto 21px;
