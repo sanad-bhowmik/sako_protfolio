@@ -1,13 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" data-theme="light"/>
-    <link rel="icon" type="image/svg+xml" href="https://img.freepik.com/premium-vector/man-character_665280-46970.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bostami</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" data-theme="light" />
+  <link rel="icon" type="image/svg+xml" href="https://img.freepik.com/premium-vector/man-character_665280-46970.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bostami</title>
+  <style>
+    :root {
+      --bg-color-light: white;
+      --bg-color-dark: black;
+    }
+
+    body {
+      background-color: var(--bg-color-light);
+      /* Default to light mode */
+      transition: background-color 0.3s ease;
+      /* Smooth transition */
+    }
+
+    body[data-theme="dark"] {
+      background-color: var(--bg-color-dark);
+      /* Change to dark mode background color */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const root = document.getElementById('root');
+      const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          const moonSunIcon = root.querySelector('.moon-icon');
+          if (moonSunIcon) {
+            moonSunIcon.addEventListener('click', toggleDarkMode);
+          }
+        });
+      });
+
+      const config = { childList: true, subtree: true };
+      observer.observe(root, config);
+    });
+
+    const toggleDarkMode = () => {
+      const body = document.body;
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      body.setAttribute('data-theme', newTheme);
+    };
+  </script>
+</body>
+
 </html>

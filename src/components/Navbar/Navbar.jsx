@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
+
   return (
-    <div className="navbar bg-base-100 ">
+    <div className={`navbar ${isDarkMode ? 'dark' : 'light'} `}>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl"><img src="../../../public/logo-preview.webp" width="153" height="32" alt="" /></a>
+        <a className="btn btn-ghost text-xl">
+          <img src="../../../public/logo-preview.webp" width="153" height="32" alt="" />
+        </a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
@@ -20,21 +28,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar" onClick={toggleDarkMode}>
             <div className="w-10 rounded-full">
-              <img alt="Tailwind CSS Navbar component" className='text-slate-50' src="../../../public/crescent-moon-svgrepo-com.svg" />
+              <img alt="Toggle Dark Mode" className="moon-icon text-white" src={isDarkMode ? "/moon.svg" : "/sun.svg"} />
             </div>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
         </div>
       </div>
     </div>
